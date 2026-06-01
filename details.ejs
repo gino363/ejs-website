@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <%- include ('./partials/head.ejs' ) %>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>website | <%= title %></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <body>
+        <%- include ('./partials/nav.ejs' ) %>
+        <div class="details contents">
+            <h1><%= blog.title %></h1>
+            <div class="content">
+            <p><%= blog.body %></p>
+            </div>
+
+        </div>
+
+        <%- include ('./partials/footer.ejs' ) %>
+    </body>
+</html>
